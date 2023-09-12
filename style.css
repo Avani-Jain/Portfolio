@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=DM+Serif+Display&family=Dancing+Script:wght@600&family=Montserrat&family=Roboto+Mono:wght@300&family=Tilt+Prism&display=swap');
+
+/* base rules */
+*{
+    margin:0;
+    padding: 0;
+}
+h1, h2, h3, h4,h5, h6{
+    font-family: 'Cormorant Garamond', sans-serif;
+    /* font-style:bold; */
+}
+p{
+    font-family: 'Monstserrat';
+    font-size: 20px;
+    line-height: 30px; 
+}
+.r-p{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Navigation */
+nav .r-nav{
+    padding: 20 px 0;
+    transition: .5s all;
+    
+}
+nav .navbar-brand{
+    font-size: 4vw !important;
+    color: #ffffff;
+    transition: .5s all;
+    font-family: "Tilt Prism" , sans-serif;
+}
+
+nav .navbar-nav li a{
+    color: rgba(255,255,255, 0.8) !important;
+    font-size: 2vw;
+    font-family: "Cormorant Garamond";
+    font-weight: 600;
+}
+nav .navbar-nav li{
+    margin-left: 15px;
+}
+nav.r-nav.stickyadd{
+    background: #c1c1c1 !important;
+    padding: 15px 0;
+    box-shadow: 0 1px 8 px 3px rgba(0,0,0,0.5);
+    transition: .5s all ease-in-out;
+}
+nav.stickyadd .navbar-brand{
+    font-size: 5vw;
+    color: black;
+    transition: .5s all;
+}
+nav.stickyadd .navbar-nav .nav-link{
+    color: black !important;
+}
+.navbar .hamburger{
+    color: #fff;
+}
+nav.stickyadd .hamburger{
+    color: black;
+}
+
+
+
+/* header section */
+header{
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+
+    background-position: center;
+    background-position: relative;
+}
+.header-content{
+    height: 100vh;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.content-box{
+    max-width:80vw;
+    color: white;
+}
+.content-box h4{
+    font-size: 3vw;
+}
+.content-box h1{
+    font-size: 5vw;
+}
+.content-box a{
+    font-family: "Cormorant Garamond";
+    font-size: 15px;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+}
+.content-box a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s all;
+}
+
+
+
+/* About section */
+.about li a{
+    padding: 10px;
+    border: solid #c1c1c1;
+    color: black;
+    line-height: 40 px;
+    transition: 0.5s all;
+    text-align: center;
+}
+.about li a:hover{
+    color: rgba(89, 13, 13, 0.785);
+    background-color: rgb(217, 216, 216);
+}
+
+
+
+
+/* Skills Section */
+.experience .progress {
+    height: 15px;
+    font-family: "Roboto Mono";
+    font-weight: bolder;
+    border-radius: 20px;
+    font-size: 10px;
+  }
+  
+  .progress-color {
+    background-color: rgba(89, 13, 13, 0.785)!important;
+  }
+  .experience label {
+    font-size: 20px;
+    font-family: 'Monstserrat';
+    
+    margin: 10px;
+  }
