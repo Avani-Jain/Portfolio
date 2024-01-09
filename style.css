@@ -44,6 +44,65 @@ p{
   }
 
 
+  /* Preloader  - it used to show the animation effects when the page is being loaded
+  .preloader:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    transition: 1s;
+  }
+  .preloader:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    transition: 1s;
+  }
+
+  /* after page loads completely */
+  
+  /* .preloader.complete:before {
+    height: 50%;
+  }
+  .preloader.complete:after {
+    height: 50%;
+  }
+  
+  .preloader.complete {
+    visibility: hidden;
+  } */
+  
+  /* .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.1);
+    border-top: 10px solid #ee8683;
+    animation: animate 1.5s infinite linear;
+    z-index: 99999;
+  } */
+  
+
+  /* rules for animation */
+  /* @keyframes animate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  } */
+
+
 /* Navigation */
 nav .r-nav{
     padding: 20 px 0;
@@ -203,7 +262,12 @@ header{
   color: rgba(89, 13, 13, 0.785) !important;
   /* background: #eee !important; */
 }
-
+.img-work{
+  max-width: 15vw;
+  height: 10vw;
+  border: 2px solid #000;
+  padding: 2px;
+}
 
 /* Testimony */
 
@@ -253,6 +317,7 @@ footer .r-icon a {
   border: 1px solid #848484;
   border-radius: 50%;
 }
+
 footer .r-icon a:hover {
   border: 1px solid #eee;
   color: #eee;
@@ -287,7 +352,7 @@ footer .r-icon a:hover {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/banner.jpg");
+      url("../images/banner.jpg");
     background-repeat: repeat;
     background-size: cover;
     background-position: -700px 0;
